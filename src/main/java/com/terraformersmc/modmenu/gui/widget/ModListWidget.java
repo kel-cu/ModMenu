@@ -230,7 +230,6 @@ public class ModListWidget extends AlwaysSelectedEntryListWidget<ModListEntry> i
 					entryLeft = getRowLeft() - 2 + entry.getXOffset();
 					int selectionRight = this.getRowLeft() + rowWidth + 2;
 					float float_2 = this.isFocused() ? 1.0F : 0.5F;
-//					RenderSystem.setShader(GameRenderer::getPositionProgram);
 					RenderSystem.setShader(ShaderProgramKeys.POSITION);
 					RenderSystem.setShaderColor(float_2, float_2, float_2, 1.0F);
 					Matrix4f matrix = DrawContext.getMatrices().peek().getPositionMatrix();
@@ -247,7 +246,6 @@ public class ModListWidget extends AlwaysSelectedEntryListWidget<ModListEntry> i
 					} catch (Exception e) {
 						// Ignored
 					}
-//					RenderSystem.setShader(GameRenderer::getPositionProgram);
 					RenderSystem.setShader(ShaderProgramKeys.POSITION);
 					RenderSystem.setShaderColor(0.0F, 0.0F, 0.0F, 1.0F);
 					buffer = tessellator.begin(VertexFormat.DrawMode.QUADS, VertexFormats.POSITION);

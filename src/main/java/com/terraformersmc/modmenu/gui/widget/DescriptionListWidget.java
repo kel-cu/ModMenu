@@ -351,7 +351,6 @@ public class DescriptionListWidget extends EntryListWidget<DescriptionListWidget
 				q = this.getY();
 			}
 
-//			RenderSystem.setShader(GameRenderer::getPositionColorProgram);
 			bufferBuilder = tessellator.begin(VertexFormat.DrawMode.QUADS, VertexFormats.POSITION_COLOR);
 			bufferBuilder.vertex(scrollbarStartX, this.getBottom(), 0.0F).color(0, 0, 0, 255);
 			bufferBuilder.vertex(scrollbarEndX, this.getBottom(), 0.0F).color(0, 0, 0, 255);
